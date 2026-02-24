@@ -5,7 +5,7 @@ import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SpotifyPage from "./pages/SpotifyPage";
-
+import GitHubLink from "./components/GitHubLink";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,6 +16,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <GitHubLink />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/spotify" element={<SpotifyPage />} />
