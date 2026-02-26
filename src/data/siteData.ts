@@ -35,7 +35,7 @@ export const siteData = {
       logoDarkBg: true,
       role: "Data Science Intern",
       company: "GE Aerospace",
-      description: "Delivered Anomaly Detection for Manufacturing Teams",
+      description: "Anomaly Detection for Manufacturing Teams",
       dates: "May 2024 - Aug 2024",
     },
     {
@@ -43,7 +43,7 @@ export const siteData = {
       logoType: "image" as const,
       role: "Innovation Analyst",
       company: "NASA Glenn Research Center",
-      description: "Produced Technical Briefs for R&D Initiatives",
+      description: "Technical Briefs for R&D Initiatives",
       dates: "January 2024 - May 2024",
     },
   ],
@@ -88,14 +88,32 @@ export const siteData = {
     {
       name: "SafetySense",
       description: "AI Hazard Classification & Detection",
+      fullTitle: "AEP Challenge",
+      techStack: "Llama, BERT, Ollama, pandas, NLTK",
+      bullets: [
+        "Engineered advanced NLP pipelines to analyze 20K safety observation records using embeddings, semantic similarity, and hazard classification, extracting high-value actionable insights for risk management.",
+        "Converted model outputs into actionable insights by clustering hazards and prioritizing risks, improving detection of safety issues by 30% and reducing reporting time 25%, strengthening worker safety protocols and project-wide decisions.",
+      ],
     },
     {
       name: "PriceMatch",
       description: "Housing Price Forecasting Model",
+      fullTitle: "3rd place at Ohio's AI Hackathon",
+      techStack: "TensorFlow, Scikit-learn, AWS SageMaker, PyTorch",
+      bullets: [
+        "Developed and fine-tuned regression and ensemble models incorporating demographic, geographic, and economic features, improving housing price prediction accuracy by 18% and revealing key market patterns.",
+        "Built end-to-end model pipelines on cloud infrastructure, performing feature engineering, hyperparameter optimization, and cross-validation, delivering robust forecasts and actionable insights that accelerated data-driven decision-making.",
+      ],
     },
     {
       name: "Cyclear",
       description: "Dynamic Rental Bike Pricing Analysis",
+      fullTitle: "Best Insights at Ohio's Premier Data Hackathon",
+      techStack: "pandas, matplotlib, NumPy, Django",
+      bullets: [
+        "Developed and deployed algorithmic pricing models for 600K+ cycling trips using temporal-spatial pattern recognition, demand elasticity modeling, and frequency-based feature engineering to optimize revenue and utilization.",
+        "Built end-to-end data pipelines with advanced preprocessing including outlier detection (IQR), missing value imputation, and cross-feature interaction analysis, producing adaptive price forecasts and actionable operational insights.",
+      ],
     },
   ],
 
