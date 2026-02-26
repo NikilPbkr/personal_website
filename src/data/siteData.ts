@@ -32,6 +32,7 @@ export const siteData = {
     {
       logo: "/ge-aerospace-logo.png",
       logoType: "image" as const,
+      logoDarkBg: true,
       role: "Data Science Intern",
       company: "GE Aerospace",
       description: "Delivered Anomaly Detection for Manufacturing Teams",
@@ -77,7 +78,7 @@ export const siteData = {
   picks2: [
     {
       title: "Spotify",
-      subtitle: "My recent listening history",
+      subtitle: "My top songs right now",
       link: "/spotify",
     },
   ],
@@ -104,15 +105,22 @@ export const siteData = {
     linkedin: "https://www.linkedin.com/in/nikil-prabhakar/",
   },
 
-  // --- SPOTIFY PAGE (sample data) ---
-  spotifyTracks: [
-    { title: "Blinding Lights", artist: "The Weeknd", time: "12m ago" },
-    { title: "Levitating", artist: "Dua Lipa", time: "17m ago" },
-    { title: "Stay", artist: "The Kid LAROI, Justin Bieber", time: "25m ago" },
-    { title: "Peaches", artist: "Justin Bieber", time: "29m ago" },
-    { title: "Good Days", artist: "SZA", time: "34m ago" },
-    { title: "Montero", artist: "Lil Nas X", time: "38m ago" },
-    { title: "Kiss Me More", artist: "Doja Cat, SZA", time: "45m ago" },
-    { title: "Save Your Tears", artist: "The Weeknd", time: "50m ago" },
+  // --- SPOTIFY PAGE (My top songs right now) ---
+  topSongs: [
+    { title: "Butterflies", artist: "Brent Faiyaz" },
+    { title: "What Did I Miss", artist: "Drake" },
+    { title: "Bahamas Promise", artist: "Drake" },
+    { title: "Latch", artist: "Disclosure" },
+    { title: "Honeymoon Avenue", artist: "Ariana Grande" },
+    { title: "Camouflage", artist: "Weston Estate" },
+    { title: "Secrets", artist: "The Weeknd" },
+    { title: "Where Were You In The Morning", artist: "Shawn Mendes" },
+    { title: "Recognize", artist: "PARTYNEXTDOOR" },
+    { title: "Emails I Can't Send", artist: "Sabrina Carpenter" },
+    { title: "Home", artist: "Eddie Benjamin" },
+    { title: "Thinkin Bout You", artist: "Ariana Grande" },
+    { title: "One of Wun", artist: "Gunna" },
+    { title: "Company", artist: "Justin Bieber" },
+    { title: "Slowly", artist: "Weston Estate" },
   ],
 };
