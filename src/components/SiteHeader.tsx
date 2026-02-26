@@ -39,11 +39,11 @@ const SiteHeader = () => {
 
   return (
     <header className="fixed top-0 left-0 right-0 z-50 transition-all duration-300">
-      <div className="glass-card mx-4 sm:mx-6 mt-4 rounded-xl px-4 sm:px-6 py-3 flex items-center justify-between">
+      <div className="mx-4 sm:mx-6 mt-4 rounded-xl px-4 sm:px-6 py-3 flex items-center justify-between bg-transparent">
         {/* NP logo - left */}
         <Link
           to="/"
-          className="px-2.5 py-1.5 -ml-2.5 rounded-lg font-mono text-sm font-medium tracking-[0.15em] text-heading hover:text-primary hover:bg-primary/5 transition-all duration-300"
+          className="px-2.5 py-1.5 -ml-2.5 rounded-lg font-mono text-sm font-medium tracking-[0.15em] text-heading hover:text-primary hover:bg-primary/10 hover:scale-105 transition-all duration-300"
         >
           NP
         </Link>

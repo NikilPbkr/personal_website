@@ -133,7 +133,7 @@
 
   /* Subtle glow for interactive elements */
   .glow-hover:hover {
-    box-shadow: 0 0 24px -4px hsl(var(--glow) / 0.3);
+    box-shadow: 0 0 28px -4px hsl(var(--glow) / 0.35);
   }
 }
 

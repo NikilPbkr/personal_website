@@ -168,7 +168,7 @@ const Index = () => {
           <div className="flex justify-center gap-8">
             <a
               href={`mailto:${d.contact.email}`}
-              className="text-subheading text-sm font-medium hover:text-primary transition-colors duration-200"
+              className="text-subheading text-sm font-medium px-3 py-2 rounded-lg hover:text-primary hover:bg-primary/10 transition-all duration-200"
             >
               email
             </a>
@@ -176,7 +176,7 @@ const Index = () => {
               href={d.contact.linkedin}
               target="_blank"
               rel="noopener noreferrer"
-              className="text-subheading text-sm font-medium hover:text-primary transition-colors duration-200"
+              className="text-subheading text-sm font-medium px-3 py-2 rounded-lg hover:text-primary hover:bg-primary/10 transition-all duration-200"
             >
               linkedin
             </a>

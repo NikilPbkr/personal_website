@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import SpotifyPage from "./pages/SpotifyPage";
 import GitHubLink from "./components/GitHubLink";
+import ScrollProgress from "./components/ScrollProgress";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -16,6 +17,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollProgress />
         <GitHubLink />
         <Routes>
           <Route path="/" element={<Index />} />
