@@ -51,6 +51,7 @@ export default {
           subheading: "hsl(var(--subheading))",
           "section-label": "hsl(var(--section-label))",
           "link-hover": "hsl(var(--link-hover))",
+          glow: "hsl(var(--glow))",
           sidebar: {
             DEFAULT: "hsl(var(--sidebar-background))",
             foreground: "hsl(var(--sidebar-foreground))",
@@ -68,6 +69,14 @@ export default {
         sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
+        "fade-in-up": {
+          from: { opacity: "0", transform: "translateY(12px)" },
+          to: { opacity: "1", transform: "translateY(0)" },
+        },
+        "fade-in": {
+          from: { opacity: "0" },
+          to: { opacity: "1" },
+        },
         "accordion-down": {
           from: {
             height: "0",
@@ -86,6 +95,8 @@ export default {
         },
       },
       animation: {
+        "fade-in-up": "fade-in-up 0.5s ease-out forwards",
+        "fade-in": "fade-in 0.4s ease-out forwards",
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },

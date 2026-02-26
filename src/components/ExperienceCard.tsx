@@ -8,18 +8,20 @@ interface ExperienceCardProps {
 }
 
 const ExperienceCard = ({ logo, logoType, role, company, description, dates }: ExperienceCardProps) => (
-  <div className="flex flex-col items-center text-center mb-10">
-    <div className="w-14 h-14 rounded-full bg-secondary flex items-center justify-center text-2xl mb-4 overflow-hidden">
+  <div className="glass-card rounded-xl p-5 sm:p-6 flex flex-col sm:flex-row sm:items-start gap-4 transition-all duration-300 hover:border-primary/30 glow-hover">
+    <div className="shrink-0 w-12 h-12 sm:w-14 sm:h-14 rounded-lg bg-secondary/80 border border-border/60 flex items-center justify-center overflow-hidden">
       {logoType === "image" ? (
-        <img src={logo} alt={company} className="w-10 h-10 object-contain" />
+        <img src={logo} alt={company} className="w-8 h-8 sm:w-10 sm:h-10 object-contain" />
       ) : (
-        logo
+        <span className="text-xl">{logo}</span>
       )}
     </div>
-    <h3 className="text-heading text-base font-medium">{role}</h3>
-    <p className="text-muted-foreground text-sm">{company}</p>
-    <p className="text-muted-foreground text-sm mt-1">{description}</p>
-    <p className="text-section-label text-xs mt-1">{dates}</p>
+    <div className="flex-1 text-left">
+      <h3 className="text-heading text-base font-medium">{role}</h3>
+      <p className="text-primary text-sm font-mono">{company}</p>
+      <p className="text-muted-foreground text-sm mt-1">{description}</p>
+      <p className="text-section-label text-xs mt-2 font-mono">{dates}</p>
+    </div>
   </div>
 );
 

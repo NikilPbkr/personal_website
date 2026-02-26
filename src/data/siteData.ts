@@ -59,6 +59,18 @@ export const siteData = {
       ["Data Management in Cloud", "Social Ethical Issues in CS"],
       ["Principles of Programming Languages", "Computer Networking"],
     ],
+    involvements: [
+      { org: "Honors Integrated Business and Engineering Program", role: "VP of Operations 24-25" },
+      {
+        org: "Buckeye Undergraduate Consulting Club",
+        role: "Project Lead 3x",
+        clients: ["J.P. Morgan Chase", "Versiti", "Cameron Mitchell Restaurants"],
+      },
+      { org: "Buckeye Private Equity Venture Capital" },
+      { org: "Chess Club" },
+      { org: "Spikeball Club" },
+      { org: "OnRamp Innovation Strategies" },
+    ],
   },
 
   // --- PICKS 2.0 (link cards) ---

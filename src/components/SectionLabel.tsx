@@ -1,5 +1,5 @@
 const SectionLabel = ({ children }: { children: React.ReactNode }) => (
-  <p className="text-section-label text-xs font-medium tracking-[0.2em] uppercase mb-8">
+  <p className="text-section-label text-[11px] font-medium tracking-[0.25em] uppercase mb-6 font-mono">
     {children}
   </p>
 );

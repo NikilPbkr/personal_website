@@ -264,16 +264,16 @@ const SpotifyPage = () => {
   return (
     <div className="relative min-h-screen bg-background overflow-hidden">
       <TechLinesBackground />
-      <div className="relative max-w-lg mx-auto px-6 py-20">
+      <div className="relative max-w-2xl mx-auto px-6 sm:px-8 py-16 sm:py-24">
         <Link
           to="/"
-          className="text-section-label text-sm hover:text-link-hover transition-colors block text-center mb-12"
+          className="text-section-label text-xs font-mono tracking-widest hover:text-primary transition-colors block text-center mb-12"
         >
           ← BACK
         </Link>
 
-        <div className="text-center mb-6">
-          <h1 className="text-heading text-xl font-medium">Recent Listening</h1>
+        <div className="text-center mb-8">
+          <h1 className="text-heading text-2xl font-semibold tracking-tight">Recent Listening</h1>
           <p className="text-muted-foreground text-sm mt-2">
             {isAuthenticated
               ? "Live view of your recent Spotify plays."
@@ -285,7 +285,7 @@ const SpotifyPage = () => {
           <button
             type="button"
             onClick={handleConnectSpotify}
-            className="inline-flex items-center justify-center rounded-full border border-border px-4 py-2 text-xs font-medium text-heading hover:bg-secondary transition-colors disabled:opacity-60"
+            className="inline-flex items-center justify-center rounded-lg border border-border px-5 py-2.5 text-xs font-medium text-heading hover:border-primary/50 hover:text-primary transition-all duration-200 disabled:opacity-60"
             disabled={isLoading}
           >
             {isLoading ? "Connecting..." : "Connect with Spotify"}
@@ -313,9 +313,9 @@ const SpotifyPage = () => {
             tracks.map((track, i) => (
               <div
                 key={`${track.title}-${track.artist}-${i}`}
-                className="flex items-center gap-4 py-3 px-2 rounded-lg hover:bg-secondary transition-colors"
+                className="glass-card flex items-center gap-4 py-4 px-4 rounded-xl transition-all duration-300 hover:border-primary/20"
               >
-                <div className="w-10 h-10 rounded bg-muted flex items-center justify-center text-lg shrink-0">
+                <div className="w-10 h-10 rounded-lg bg-secondary/80 border border-border/60 flex items-center justify-center text-lg shrink-0">
                   🎵
                 </div>
                 <div className="flex-1 min-w-0">

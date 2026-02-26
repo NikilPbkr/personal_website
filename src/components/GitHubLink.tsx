@@ -3,7 +3,7 @@ const GitHubLink = () => (
     href="https://github.com/NikilPbkr"
     target="_blank"
     rel="noopener noreferrer"
-    className="fixed bottom-6 left-6 z-50 text-muted-foreground transition-all duration-200 hover:brightness-75"
+    className="fixed bottom-6 left-6 z-50 text-muted-foreground hover:text-primary transition-colors duration-200"
     aria-label="GitHub"
   >
     <svg
