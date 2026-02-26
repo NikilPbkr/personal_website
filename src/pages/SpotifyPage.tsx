@@ -30,6 +30,10 @@ const SpotifyPage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
+  useEffect(() => {
     const loadArtwork = async () => {
       const results = await Promise.all(
         siteData.topSongs.map(async (song) => ({
